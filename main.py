@@ -5,7 +5,7 @@ def miles_to_kilometer():
     """Takes Miles as input and converts to KiloMeters
     And creates a Label to display the output"""
     miles = int(mile_input.get())
-    Kilometers = int(miles*1.609)
+    Kilometers = round(miles*1.609)
     result_label = Label(
         text=f"{miles} Miles is equal to {Kilometers} Km",font=("Roboto", 10, "bold"), fg="red", bg="Black")
     result_label.grid(row=4, column=1)
